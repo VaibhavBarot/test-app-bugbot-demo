@@ -237,9 +237,7 @@
                 
                 if (data.success) {
                     cart = data.cart;
-                    // BUG: updateCartDisplay() is commented out, so cart count doesn't update!
-                    // updateCartDisplay();
-                    // The cart items list updates when you reload, but the count badge stays at 0
+                    updateCartDisplay();
                 } else {
                     showError('Failed to add item to cart');
                 }
